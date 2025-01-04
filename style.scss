@@ -1,0 +1,48 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+* {
+    // outline: 1px red solid;
+}
+
+body {
+    height: 100vh;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(150deg, rgb(35, 35, 75), rgb(30, 15, 39));
+
+    #app-container {
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+
+        font-family: Arial, Helvetica, sans-serif;
+
+        #title,#description{
+            text-align: center;
+        }
+    }
+
+    footer{
+        text-align: center;
+    }
+
+}
+
+#tooltip {
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+}
